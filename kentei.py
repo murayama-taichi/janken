@@ -16,18 +16,8 @@ func()
 
 #相手1~5（相手２は勝率0％）
 n = 100
-x = 25
-print("相手１",end=" ")
-func()
-x = 0
-print("相手２",end=" ")
-func()
-x = 49
-print("相手３",end=" ")
-func()
-x = 68
-print("相手４",end=" ")
-func()
-x = 40
-print("相手５",end=" ")
-func()
+x_arr = [25,0,49,68,40]
+for i in range(5):
+    x = x_arr[i]
+    print(f"相手{i+1}",end=" ")
+    func()
